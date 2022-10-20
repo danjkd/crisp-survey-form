@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Crisp Muay Thai Camp Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve our service</p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <label id="name-label" for="name">
+          Name
+          <input type="text" id="name" placeholder="Enter your name" required />
+        </label>
+        <label id="email-label" for="email">
+          Email
+          <input type="email" id="email" placeholder="Enter your email" required />
+        </label>
+        <label id="number-label" for="number">
+          Age (optional)
+          <input type="number" id="number" placeholder="How old are you?" min="11" max="60" />
+        </label>
+
+        <label for="dropdown"
+          >How do you know about Crisp Muay Thai?
+          <select id="dropdown">
+            <option disabled selected value>Please select one</option>
+            <option value="facebook">Facebook Page</option>
+            <option value="youtube">Youtube Channel</option>
+            <option value="website">Website Page</option>
+            <option value="referal">Referral</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+
+        <label id="athlete-label" for="trainer"> Who is your favorite trainer? </label>
+        <input type="radio" name="trainer" value="0" checked /> Saenchai <br />
+        <input type="radio" name="trainer" value="1" /> Buakaw <br />
+        <input type="radio" name="trainer" value="2" /> Superbon <br />
+        <input type="radio" name="trainer" value="3" /> Superlek <br />
+        <input type="radio" name="trainer" value="4" /> Tawanchai <br />
+
+        <br />
+        <br />
+        <label id="camps-label" for="camps"> Please choose your favorite Muay Thai fighter(s)? </label>
+        <input type="checkbox" value="petchmorakot" checked /> Petchmorakot <br />
+        <input type="checkbox" value="john-haggerty" /> John Haggerty <br />
+        <input type="checkbox" value="rodtang" /> Rodtang<br />
+        <input type="checkbox" value="stamp-fairtex" /> Stamp Fairtex<br />
+
+        <br />
+        <br />
+        <label id="comments-label" for="comments">
+          Any comments or suggestions?
+          <textarea id="comments" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+        </label>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>

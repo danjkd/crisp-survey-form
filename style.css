@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(29deg, rgba(2, 0, 36, 0.7) 0%, rgba(3, 42, 177, 0.7) 52%, rgba(0, 212, 255, 0.7) 100%),
+    url("https://images.unsplash.com/photo-1601039834076-c41cf1766d4b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-size: cover;
+  z-index: -1;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  min-height: 1000px;
+}
+
+h1,
+p {
+  text-align: center;
+  color: #fff;
+}
+
+form {
+  max-width: 600px;
+  background-color: rgba(3, 17, 67, 0.7);
+  margin: 0 auto;
+  padding: 20px 40px;
+  color: white;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 25px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  margin-top: 8px;
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  font-family: inherit;
+  display: block;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  height: 35px;
+  width: 100%;
+  font-family: inherit;
+  background-color: rgba(114, 138, 235, 0.7);
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+}
+
+button:hover {
+  cursor: pointer;
+}
