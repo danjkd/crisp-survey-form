@@ -41,6 +41,10 @@ label {
   margin-bottom: 25px;
 }
 
+.center {
+  vertical-align: 2px;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="number"],
